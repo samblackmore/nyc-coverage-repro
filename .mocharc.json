@@ -1,0 +1,6 @@
+{
+  "exit": true,
+  "timeout": 60000,
+  "extension": ["ts"]
+  
+}

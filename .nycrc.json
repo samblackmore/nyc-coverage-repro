@@ -1,0 +1,11 @@
+{
+  "all": true,
+  "require": "ts-node/register/transpile-only",
+  "exclude": ["coverage"],
+  "check-coverage": true,
+  "extension": [".ts"],
+  "statements": 44,
+  "branch": 100,
+  "functions": 20,
+  "lines": 55
+}

@@ -1,0 +1,40 @@
+{
+  "name": "nyc-coverage-repo",
+  "version": "1.0.0",
+  "description": "A minimal repro project that produces different coverage results from one run to the next when running `npm run test:coverage`",
+  "scripts": {
+    "test": "ts-mocha --paths 'tests/**/*.spec.ts'",
+    "test:coverage": "nyc npm run test",
+    "posttest:coverage": "nyc report --reporter=lcov"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/chai-http": "^4.2.0",
+    "@types/eslint": "^8.4.2",
+    "@types/lodash": "^4.14.182",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.35",
+    "@types/prettier": "^2.6.1",
+    "@types/rewire": "^2.5.28",
+    "@types/sinon": "^10.0.13",
+    "@types/sinon-chai": "^3.2.8",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "mocha": "^8.4.0",
+    "nyc": "^13.3.0",
+    "sinon": "^4.5.0",
+    "sinon-chai": "^3.7.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^8.0.11",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.1.2"
+  }
+}
